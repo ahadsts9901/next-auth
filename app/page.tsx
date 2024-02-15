@@ -1,14 +1,14 @@
-import { getServerSession } from 'next-auth'
+import { getSession } from 'next-auth/react'
 import React from 'react'
 import { authOptions } from './api/auth/[...nextauth]/route'
 
-const Home = async () => {
-  const session = await getServerSession(authOptions)
-  console.log("session", session);
+const Home = async (props: any) => {
+
+  
 
   return (
     <>
-      <div>home</div>
+      <h1>hi</h1>
     </>
   )
 }

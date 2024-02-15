@@ -8,9 +8,12 @@ const Signin = () => {
         <>
             <p>Signin</p>
             <p className='m-4 rounded-full p-2 border shadow-sm w-fit cursor-pointer'
-                onClick={async() => await signIn('google', {
-                    callbackUrl: '/',
-                })}
+                onClick={
+                    async () => await signIn('google', {
+                        callbackUrl: '/',
+                        redirect: true,
+
+                    })}
             >google</p>
         </>
     )
